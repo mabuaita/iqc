@@ -35,7 +35,7 @@ def iqcenv():
 		env = os.environ["iqcenv"]
 		return env
 	except KeyError:
-		print ("environment: dev, stage, or prod, not set")
+		print ("iqcenv: test, stage, or prod, not set")
 		sys.exit(1)
 
 def delCandidate(bucket):
